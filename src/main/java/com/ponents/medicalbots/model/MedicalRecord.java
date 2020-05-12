@@ -60,7 +60,7 @@ public class MedicalRecord implements Serializable {
 
     @Override
     public String toString() {
-        return "MedicalRecord{" + "id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", description=" + description + '}';
+        return id + " -- " + firstName + " -- " + lastName;
     }
     
     

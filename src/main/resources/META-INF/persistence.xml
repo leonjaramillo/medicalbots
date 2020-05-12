@@ -4,6 +4,7 @@
              version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
     <persistence-unit name="medicalRecords" transaction-type="RESOURCE_LOCAL">
         <class>com.ponents.medicalbots.model.MedicalRecord</class>
+        <class>com.ponents.medicalbots.model.Triage</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
             <property name="javax.persistence.jdbc.url"

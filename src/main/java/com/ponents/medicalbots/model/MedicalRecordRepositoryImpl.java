@@ -24,8 +24,7 @@ public class MedicalRecordRepositoryImpl implements MedicalRecordRepository {
     public MedicalRecord getMedicalRecordById(long id) throws EntityNotFoundException {
         MedicalRecord medicalRecord = em.find(MedicalRecord.class, id);
         if (medicalRecord == null) {
-            throw new EntityNotFoundException("Can't find medical record with ID "
-                    + id);
+            throw new EntityNotFoundException("Can't find medical record with ID " + id);
         }
         return medicalRecord;
     }
